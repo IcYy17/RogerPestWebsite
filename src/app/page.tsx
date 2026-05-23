@@ -7,6 +7,7 @@ import { CTASection } from "@/components/CTASection";
 import { FAQ } from "@/components/FAQ";
 import { SectionDivider } from "@/components/SectionDivider";
 import { ShieldIcon } from "@/components/ShieldBadge";
+import { getPestIcon } from "@/components/PestIcons";
 import { JsonLd } from "@/components/JsonLd";
 import { business } from "@/content/business";
 import { headerServices, services } from "@/content/services";
@@ -38,18 +39,21 @@ export default function HomePage() {
           Tap a pest, get the help you need.
         </h2>
         <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
-          {services.map((s) => (
-            <Link
-              key={s.slug}
-              href={`/services/${s.slug}`}
-              className="group flex flex-col items-center justify-center rounded-lg border border-brand-tan/40 bg-white p-4 hover:border-brand-green hover:shadow-sm transition-all text-center"
-            >
-              <ShieldIcon className="h-6 w-6 text-brand-green" />
-              <span className="mt-2 text-xs font-semibold text-brand-charcoal group-hover:text-brand-green">
-                {s.shortName}
-              </span>
-            </Link>
-          ))}
+          {services.map((s) => {
+            const Icon = getPestIcon(s.slug) ?? ShieldIcon;
+            return (
+              <Link
+                key={s.slug}
+                href={`/services/${s.slug}`}
+                className="group flex flex-col items-center justify-center rounded-lg border border-brand-tan/40 bg-white p-4 hover:border-brand-green hover:shadow-md hover:-translate-y-0.5 transition-all text-center"
+              >
+                <Icon className="h-9 w-9 text-brand-green transition-colors group-hover:text-brand-cta" />
+                <span className="mt-3 text-xs font-semibold text-brand-charcoal group-hover:text-brand-green">
+                  {s.shortName}
+                </span>
+              </Link>
+            );
+          })}
         </div>
       </section>
 
