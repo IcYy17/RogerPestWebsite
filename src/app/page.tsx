@@ -195,6 +195,46 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Missouri pest facts — citation-dense, quotable content (AEO) */}
+      <section className="bg-brand-green text-brand-cream">
+        <div className="mx-auto max-w-5xl px-5 sm:px-6 py-12 sm:py-20">
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-tan-light">
+              Pest pressure in Missouri
+            </p>
+            <h2 className="mt-2 font-display text-3xl sm:text-4xl text-white">
+              Why pest control matters here.
+            </h2>
+          </div>
+          <dl className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <Stat
+              figure="$5 billion"
+              label="Estimated U.S. property damage caused by termites each year (National Pest Management Association)."
+            />
+            <Stat
+              figure="Moderate–heavy"
+              label="Missouri's termite pressure zone on the IRC Termite Infestation Probability Map — among the higher-risk regions in the Midwest."
+            />
+            <Stat
+              figure="¼ inch"
+              label="The gap a house mouse can squeeze through — about the width of a pencil — which is why exclusion matters as much as trapping."
+            />
+            <Stat
+              figure="Spring"
+              label="When Missouri's eastern subterranean termites swarm (roughly March–May), the clearest sign of an active colony."
+            />
+          </dl>
+          <p className="mx-auto mt-10 max-w-3xl text-center text-sm leading-relaxed text-brand-cream/85">
+            The western St. Louis metro — Eureka, Wildwood, Pacific, Ballwin,
+            Chesterfield, and the wooded Meramec River valley along the I-44
+            corridor — sees heavy pressure from subterranean termites, odorous
+            house ants, brown recluse spiders, house mice, mosquitoes, and
+            seasonal wildlife. Roger&apos;s has treated these specific pests in
+            these specific neighborhoods since {business.foundedYear}.
+          </p>
+        </div>
+      </section>
+
       {/* FAQ */}
       <FAQ items={siteFaqs} heading="Common questions" />
 
@@ -211,6 +251,17 @@ function Feature({ title, body }: { title: string; body: string }) {
       </div>
       <h3 className="mt-4 font-display text-2xl text-brand-green">{title}</h3>
       <p className="mt-3 text-sm leading-relaxed text-brand-charcoal/80">{body}</p>
+    </div>
+  );
+}
+
+function Stat({ figure, label }: { figure: string; label: string }) {
+  return (
+    <div className="rounded-lg border border-brand-green-light/40 bg-brand-green-dark/40 p-5 text-center">
+      <dt className="font-display text-3xl text-brand-tan-light">{figure}</dt>
+      <dd className="mt-2 text-xs leading-relaxed text-brand-cream/85">
+        {label}
+      </dd>
     </div>
   );
 }

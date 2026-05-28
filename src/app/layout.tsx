@@ -4,7 +4,11 @@ import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { JsonLd } from "@/components/JsonLd";
-import { localBusinessSchema } from "@/lib/jsonld";
+import {
+  localBusinessSchema,
+  personSchema,
+  webSiteSchema,
+} from "@/lib/jsonld";
 import { business } from "@/content/business";
 
 const playfair = Playfair_Display({
@@ -75,7 +79,11 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-brand-cream text-brand-charcoal">
+        {/* Site-wide entity graph: business + founder (E-E-A-T) + website.
+            Linked by @id so answer engines resolve them as one entity. */}
         <JsonLd data={localBusinessSchema()} />
+        <JsonLd data={personSchema()} />
+        <JsonLd data={webSiteSchema()} />
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
