@@ -67,7 +67,7 @@ export const business = {
   ],
 
   domain: "termiterogers.com",
-  siteUrl: "https://termiterogers.com",
+  siteUrl: "https://www.termiterogers.com",
 
   // External listings — used in footer "Leave a Review" + JSON-LD sameAs
   sameAs: {
