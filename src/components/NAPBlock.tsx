@@ -32,16 +32,25 @@ export function NAPBlock({
           <span itemProp="postalCode">{business.address.zip}</span>
         </div>
       </div>
-      <div className="mt-2">
-        <a
-          href={business.phoneHref}
-          itemProp="telephone"
-          className="tnum font-semibold hover:text-brand-tan-light"
-        >
-          {business.phone}
-        </a>
-      </div>
-      <div className="mt-1 text-xs opacity-80">{business.hoursDisplay}</div>
+      <ul className="mt-3 space-y-1">
+        {business.phones.map((p, i) => (
+          <li key={p.href} className="flex items-baseline gap-2">
+            <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-brand-tan-light w-12 flex-shrink-0">
+              {p.label}
+            </span>
+            <a
+              href={p.href}
+              // itemProp="telephone" only on the canonical NAP number (South)
+              // so structured-data tools see exactly one primary phone.
+              {...(i === 0 ? { itemProp: "telephone" } : {})}
+              className="tnum font-semibold hover:text-brand-tan-light"
+            >
+              {p.number}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <div className="mt-3 text-xs opacity-80">{business.hoursDisplay}</div>
     </address>
   );
 }
