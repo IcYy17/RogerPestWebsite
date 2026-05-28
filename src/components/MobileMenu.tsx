@@ -1,14 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { business } from "@/content/business";
 import { headerServices } from "@/content/services";
 import { cities } from "@/content/cities";
 
-// Mobile hamburger menu. Renders the same nav structure as desktop, but as
-// a slide-down panel under 1024px. Still anchor tags throughout — crawlable.
+// Mobile hamburger menu. The panel is `absolute top-full` relative to the
+// sticky <header> in SiteHeader.tsx — so it always sits flush against the
+// actual bottom of the header regardless of header height. A backdrop
+// behind the panel closes the menu on tap, and we lock body scroll while
+// it's open so the page behind doesn't drift.
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
@@ -19,6 +22,32 @@ export function MobileMenu() {
     return pathname === target || pathname.startsWith(`${target}/`);
   };
 
+  // Close on route change
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  // Body scroll lock when open
+  useEffect(() => {
+    if (open) {
+      const prev = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = prev;
+      };
+    }
+  }, [open]);
+
+  // Close on Escape
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+
   return (
     <div className="lg:hidden">
       <button
@@ -26,16 +55,33 @@ export function MobileMenu() {
         onClick={() => setOpen(!open)}
         aria-expanded={open}
         aria-label="Toggle menu"
-        className="rounded p-2 text-brand-charcoal hover:bg-brand-tan/10"
+        className="relative z-50 rounded p-2 text-brand-charcoal hover:bg-brand-tan/10"
       >
         {open ? <CloseIcon /> : <MenuIcon />}
       </button>
 
       {open && (
-        <div
-          className="fixed inset-x-0 top-[88px] bottom-0 z-40 overflow-y-auto bg-brand-cream border-t border-brand-tan/30 px-6 py-6"
-        >
-          <nav className="space-y-1 text-base">
+        <>
+          {/* Tappable backdrop — covers the rest of the viewport below the header */}
+          <button
+            type="button"
+            aria-label="Close menu"
+            onClick={() => setOpen(false)}
+            className="absolute inset-x-0 top-full h-screen z-30 bg-brand-charcoal/40 cursor-default"
+          />
+          {/* Panel — absolute relative to the sticky header. `top-full` places
+              the top at the bottom of the header; `max-h-[calc(100vh-100%)]`
+              uses `100%` (which, for an absolute child, refers to the
+              containing block / header height) to compute the remaining
+              viewport space exactly — so the panel never overflows the
+              viewport regardless of how tall the header is. */}
+          <div
+            className="absolute inset-x-0 top-full max-h-[calc(100vh-100%)] overflow-y-auto overscroll-contain z-40 bg-brand-cream border-t border-brand-tan/30 px-6 py-6 pb-8 shadow-2xl"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Site navigation"
+          >
+            <nav className="space-y-1 text-base">
             <MobileLink
               href="/"
               onClick={() => setOpen(false)}
@@ -135,6 +181,7 @@ export function MobileMenu() {
             ))}
           </div>
         </div>
+        </>
       )}
     </div>
   );

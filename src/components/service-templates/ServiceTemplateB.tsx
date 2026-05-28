@@ -20,7 +20,7 @@ export function ServiceTemplateB({ service }: { service: Service }) {
   return (
     <>
       {/* Full-bleed hero */}
-      <section className="relative h-[70vh] min-h-[480px] w-full text-white">
+      <section className="relative h-[75vh] min-h-[520px] sm:h-[70vh] sm:min-h-[480px] w-full text-white">
         <Image
           src={img.src}
           alt={img.alt}
@@ -29,13 +29,13 @@ export function ServiceTemplateB({ service }: { service: Service }) {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-green/95 via-brand-green/75 to-brand-green/35" />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-green/95 via-brand-green/85 to-brand-green/50 sm:via-brand-green/75 sm:to-brand-green/35" />
         <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-6">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-tan-light">
               {service.shortName} · Eureka, MO
             </p>
-            <h1 className="mt-3 text-4xl sm:text-5xl md:text-6xl">
+            <h1 className="mt-3 text-3xl sm:text-5xl md:text-6xl">
               {service.name} in Eureka & St. Louis County
             </h1>
             <p className="mt-6 text-lg md:text-xl leading-relaxed text-brand-cream/95">
@@ -58,7 +58,7 @@ export function ServiceTemplateB({ service }: { service: Service }) {
 
       {/* Signs FIRST — split with image */}
       <section className="bg-brand-cream">
-        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 lg:grid-cols-5 items-center">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-12 sm:py-20 lg:grid-cols-5 items-center">
           <div className="lg:col-span-2 relative aspect-square rounded-lg overflow-hidden ring-1 ring-brand-tan/40">
             <Image
               src={img.src}
@@ -91,7 +91,7 @@ export function ServiceTemplateB({ service }: { service: Service }) {
       </section>
 
       {/* Intro */}
-      <section className="mx-auto max-w-3xl px-6 py-20">
+      <section className="mx-auto max-w-3xl px-6 py-12 sm:py-20">
         <p className="eyebrow text-center">Why this matters</p>
         <div className="mt-6 space-y-5 text-base leading-relaxed text-brand-charcoal/90">
           {service.intro.map((p, i) => (
@@ -102,7 +102,7 @@ export function ServiceTemplateB({ service }: { service: Service }) {
 
       {/* What we treat — green band */}
       <section className="bg-brand-green text-brand-cream">
-        <div className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mx-auto max-w-6xl px-6 py-12 sm:py-20">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-tan-light text-center">
             What we treat
           </p>
@@ -124,7 +124,7 @@ export function ServiceTemplateB({ service }: { service: Service }) {
       </section>
 
       {/* Process — vertical timeline */}
-      <section className="mx-auto max-w-3xl px-6 py-20">
+      <section className="mx-auto max-w-3xl px-6 py-12 sm:py-20">
         <p className="eyebrow text-center">How Roger&apos;s treats it</p>
         <h2 className="mt-2 text-center font-display text-3xl sm:text-4xl text-brand-green">
           Three honest steps.
@@ -147,7 +147,7 @@ export function ServiceTemplateB({ service }: { service: Service }) {
 
       {/* Safety + Pricing combined */}
       <section className="bg-brand-cream-dark">
-        <div className="mx-auto max-w-6xl px-6 py-16 grid gap-12 md:grid-cols-2">
+        <div className="mx-auto max-w-6xl px-6 py-10 sm:py-16 grid gap-12 md:grid-cols-2">
           <div className="flex gap-4 items-start">
             <ShieldIcon className="h-8 w-8 text-brand-green flex-shrink-0" />
             <div>
@@ -178,7 +178,7 @@ export function ServiceTemplateB({ service }: { service: Service }) {
 
       {/* Cities — alternating tag style */}
       <section className="bg-white">
-        <div className="mx-auto max-w-5xl px-6 py-16 text-center">
+        <div className="mx-auto max-w-5xl px-6 py-10 sm:py-16 text-center">
           <p className="eyebrow">Where we work</p>
           <h2 className="mt-2 font-display text-3xl text-brand-green">
             {service.name} in our service cities.

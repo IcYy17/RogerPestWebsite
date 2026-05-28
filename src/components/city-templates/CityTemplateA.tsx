@@ -28,12 +28,12 @@ export function CityTemplateA({ city }: { city: City }) {
     <>
       {/* Split hero */}
       <section className="relative bg-brand-green text-white overflow-hidden">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-10 sm:py-16 lg:grid-cols-2 lg:py-24">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-tan-light">
               {city.name}, {city.state}
             </p>
-            <h1 className="mt-3 text-4xl sm:text-5xl md:text-6xl text-white">
+            <h1 className="mt-3 text-3xl sm:text-5xl md:text-6xl text-white">
               Pest Control in {city.name}, {city.state}
             </h1>
             <p className="mt-6 max-w-xl text-lg text-brand-cream/90 leading-relaxed">
@@ -86,7 +86,7 @@ export function CityTemplateA({ city }: { city: City }) {
       </section>
 
       {/* About */}
-      <section className="mx-auto max-w-3xl px-6 py-20">
+      <section className="mx-auto max-w-3xl px-6 py-12 sm:py-20">
         <p className="eyebrow">About {city.name}</p>
         <h2 className="mt-2 font-display text-3xl sm:text-4xl text-brand-green">
           We know {city.name}.
@@ -102,7 +102,7 @@ export function CityTemplateA({ city }: { city: City }) {
 
       {/* Pest profile + top pests */}
       <section className="bg-white">
-        <div className="mx-auto max-w-5xl px-6 py-20">
+        <div className="mx-auto max-w-5xl px-6 py-12 sm:py-20">
           <p className="eyebrow">Pests common in {city.name}</p>
           <h2 className="mt-2 font-display text-3xl text-brand-green">
             What we see most around {city.zips.join(", ")}.
@@ -131,7 +131,7 @@ export function CityTemplateA({ city }: { city: City }) {
       </section>
 
       {/* All services in city */}
-      <section className="mx-auto max-w-5xl px-6 py-20">
+      <section className="mx-auto max-w-5xl px-6 py-12 sm:py-20">
         <p className="eyebrow">All services in {city.name}</p>
         <h2 className="mt-2 font-display text-3xl text-brand-green">
           Full-service pest control for {city.name}, {city.state}.
@@ -153,7 +153,7 @@ export function CityTemplateA({ city }: { city: City }) {
 
       {/* Why us */}
       <section className="bg-brand-cream-dark">
-        <div className="mx-auto max-w-5xl px-6 py-20">
+        <div className="mx-auto max-w-5xl px-6 py-12 sm:py-20">
           <p className="eyebrow text-center">Why {city.name} chooses Roger&apos;s</p>
           <h2 className="mt-2 text-center font-display text-3xl text-brand-green">
             Local matters when it&apos;s your house.
@@ -173,7 +173,7 @@ export function CityTemplateA({ city }: { city: City }) {
 
       {/* City testimonials */}
       {cityTestimonials.length > 0 && (
-        <section className="mx-auto max-w-5xl px-6 py-20">
+        <section className="mx-auto max-w-5xl px-6 py-12 sm:py-20">
           <p className="eyebrow text-center">From {city.name} customers</p>
           <h2 className="mt-2 text-center font-display text-3xl text-brand-green">
             What people in {city.name} are saying.
@@ -191,7 +191,7 @@ export function CityTemplateA({ city }: { city: City }) {
 
       {/* Neighborhoods + ZIPs split */}
       <section className="bg-white">
-        <div className="mx-auto max-w-5xl px-6 py-20 grid gap-12 md:grid-cols-2">
+        <div className="mx-auto max-w-5xl px-6 py-12 sm:py-20 grid gap-12 md:grid-cols-2">
           <div>
             <p className="eyebrow">Neighborhoods we serve</p>
             <h2 className="mt-2 font-display text-2xl text-brand-green">

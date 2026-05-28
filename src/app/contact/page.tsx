@@ -32,13 +32,13 @@ export default function ContactPage() {
       />
 
       {/* Phone-first contact block */}
-      <section className="mx-auto max-w-5xl px-6 py-20">
+      <section className="mx-auto max-w-5xl px-6 py-12 sm:py-20">
         <div className="grid gap-12 md:grid-cols-2 items-start">
           <div>
             <p className="eyebrow">Call us</p>
             <a
               href={business.phoneHref}
-              className="mt-3 block font-display text-5xl md:text-6xl text-brand-cta hover:text-brand-cta-hover tnum"
+              className="mt-3 block font-display text-4xl sm:text-5xl md:text-6xl text-brand-cta hover:text-brand-cta-hover tnum break-words"
             >
               {business.phone}
             </a>

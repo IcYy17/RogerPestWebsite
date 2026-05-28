@@ -27,7 +27,7 @@ export default function AboutPage() {
       <TrustStrip variant="light" />
 
       {/* Story */}
-      <section className="mx-auto max-w-5xl px-6 py-20">
+      <section className="mx-auto max-w-5xl px-6 py-12 sm:py-20">
         <div className="grid gap-12 lg:grid-cols-5 items-start">
           <div className="lg:col-span-2 lg:sticky lg:top-32">
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden ring-1 ring-brand-tan/40">
@@ -81,7 +81,7 @@ export default function AboutPage() {
 
       {/* Credentials */}
       <section className="bg-white">
-        <div className="mx-auto max-w-5xl px-6 py-20">
+        <div className="mx-auto max-w-5xl px-6 py-12 sm:py-20">
           <div className="text-center">
             <p className="eyebrow">Credentials</p>
             <h2 className="mt-2 text-3xl sm:text-4xl text-brand-green">
@@ -113,7 +113,7 @@ export default function AboutPage() {
       </section>
 
       {/* Meet Roger */}
-      <section className="mx-auto max-w-6xl px-6 py-20">
+      <section className="mx-auto max-w-6xl px-6 py-12 sm:py-20">
         <div className="grid gap-12 lg:grid-cols-5 items-center">
           <div className="lg:col-span-2 relative aspect-square rounded-lg overflow-hidden ring-1 ring-brand-tan/40 shadow-lg">
             <Image
@@ -167,7 +167,7 @@ export default function AboutPage() {
 
       {/* Community */}
       <section className="bg-brand-cream-dark">
-        <div className="mx-auto max-w-3xl px-6 py-20">
+        <div className="mx-auto max-w-3xl px-6 py-12 sm:py-20">
           <p className="eyebrow text-center">In the community</p>
           <h2 className="mt-2 text-center text-3xl sm:text-4xl text-brand-green">
             Eureka&apos;s our home, too.

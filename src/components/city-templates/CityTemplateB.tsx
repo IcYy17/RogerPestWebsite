@@ -37,13 +37,13 @@ export function CityTemplateB({ city }: { city: City }) {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-tr from-brand-green/95 via-brand-green/70 to-brand-green/20" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-brand-green/95 via-brand-green/85 to-brand-green/45 sm:via-brand-green/70 sm:to-brand-green/20" />
         <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-6">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-tan-light">
               Pest Control · {city.zips.join(" · ")}
             </p>
-            <h1 className="mt-3 text-4xl sm:text-5xl md:text-6xl">
+            <h1 className="mt-3 text-3xl sm:text-5xl md:text-6xl">
               {city.name}, {city.state}
             </h1>
             <p className="mt-6 text-lg md:text-xl leading-relaxed text-brand-cream/95 max-w-xl">
@@ -66,7 +66,7 @@ export function CityTemplateB({ city }: { city: City }) {
 
       {/* About with image */}
       <section className="bg-brand-cream">
-        <div className="mx-auto max-w-6xl px-6 py-20 grid gap-12 lg:grid-cols-5 items-center">
+        <div className="mx-auto max-w-6xl px-6 py-12 sm:py-20 grid gap-12 lg:grid-cols-5 items-center">
           <div className="lg:col-span-2 relative aspect-[4/5] rounded-lg overflow-hidden ring-1 ring-brand-tan/40">
             <Image
               src={img.src}
@@ -92,7 +92,7 @@ export function CityTemplateB({ city }: { city: City }) {
 
       {/* ZIP / Neighborhood band */}
       <section className="bg-brand-green text-brand-cream">
-        <div className="mx-auto max-w-6xl px-6 py-16">
+        <div className="mx-auto max-w-6xl px-6 py-10 sm:py-16">
           <div className="grid gap-8 md:grid-cols-3">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-tan-light">
@@ -127,7 +127,7 @@ export function CityTemplateB({ city }: { city: City }) {
       </section>
 
       {/* Pest profile */}
-      <section className="mx-auto max-w-5xl px-6 py-20">
+      <section className="mx-auto max-w-5xl px-6 py-12 sm:py-20">
         <p className="eyebrow text-center">Pests in {city.name}</p>
         <h2 className="mt-2 text-center font-display text-3xl sm:text-4xl text-brand-green">
           What we see most around here.
@@ -163,7 +163,7 @@ export function CityTemplateB({ city }: { city: City }) {
 
       {/* All services as alternating list */}
       <section className="bg-white">
-        <div className="mx-auto max-w-5xl px-6 py-20">
+        <div className="mx-auto max-w-5xl px-6 py-12 sm:py-20">
           <p className="eyebrow text-center">All services</p>
           <h2 className="mt-2 text-center font-display text-3xl sm:text-4xl text-brand-green">
             Full-service pest control in {city.name}.
@@ -196,7 +196,7 @@ export function CityTemplateB({ city }: { city: City }) {
       {/* Featured testimonial */}
       {featuredTestimonial && (
         <section className="bg-brand-cream-dark">
-          <div className="mx-auto max-w-3xl px-6 py-20 text-center">
+          <div className="mx-auto max-w-3xl px-6 py-12 sm:py-20 text-center">
             <p className="eyebrow">From a {city.name} customer</p>
             <blockquote className="mt-6 font-display text-2xl sm:text-3xl text-brand-green leading-relaxed">
               “{featuredTestimonial.body}”
@@ -225,7 +225,7 @@ export function CityTemplateB({ city }: { city: City }) {
       )}
 
       {/* Why us — numbered */}
-      <section className="mx-auto max-w-3xl px-6 py-20">
+      <section className="mx-auto max-w-3xl px-6 py-12 sm:py-20">
         <p className="eyebrow text-center">Why {city.name} chooses Roger&apos;s</p>
         <h2 className="mt-2 text-center font-display text-3xl text-brand-green">
           Local matters.

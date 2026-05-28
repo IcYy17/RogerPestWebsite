@@ -36,7 +36,7 @@ export default function ServicesIndexPage() {
 
       <TrustStrip variant="light" />
 
-      <section className="mx-auto max-w-7xl px-6 py-20">
+      <section className="mx-auto max-w-7xl px-6 py-12 sm:py-20">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {services.map((s) => (
             <ServiceCard key={s.slug} service={s} />
@@ -48,7 +48,7 @@ export default function ServicesIndexPage() {
 
       {/* Why hire local */}
       <section className="bg-white">
-        <div className="mx-auto max-w-5xl px-6 py-20">
+        <div className="mx-auto max-w-5xl px-6 py-12 sm:py-20">
           <p className="eyebrow text-center">Why hire a local company</p>
           <h2 className="mt-2 text-center text-3xl sm:text-4xl text-brand-green">
             The chain pest control companies aren't from Missouri.

@@ -34,11 +34,11 @@ export function ServiceTemplateC({ service }: { service: Service }) {
             <circle cx="100" cy="100" r="78" />
           </svg>
         </div>
-        <div className="relative mx-auto max-w-3xl px-6 py-20 md:py-28 text-center">
+        <div className="relative mx-auto max-w-3xl px-6 py-12 sm:py-20 md:py-28 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-tan-light">
             {service.shortName} · Eureka, MO
           </p>
-          <h1 className="mt-3 font-display text-4xl sm:text-5xl md:text-6xl">
+          <h1 className="mt-3 font-display text-3xl sm:text-5xl md:text-6xl">
             {service.name} in Eureka, MO
           </h1>
           <p className="mt-6 text-lg md:text-xl leading-relaxed text-brand-cream/95 italic">
@@ -65,7 +65,7 @@ export function ServiceTemplateC({ service }: { service: Service }) {
       <TrustStrip variant="light" />
 
       {/* Intro — article style with drop cap on first paragraph */}
-      <section className="mx-auto max-w-2xl px-6 py-20">
+      <section className="mx-auto max-w-2xl px-6 py-12 sm:py-20">
         <p className="eyebrow text-center">Why this matters in Missouri</p>
         <SectionDivider className="!my-6" />
         <article className="space-y-5 text-lg leading-[1.75] text-brand-charcoal/90">
@@ -82,7 +82,7 @@ export function ServiceTemplateC({ service }: { service: Service }) {
 
       {/* What + Signs (alternating layout, asymmetric grid) */}
       <section className="bg-brand-cream-dark">
-        <div className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mx-auto max-w-6xl px-6 py-12 sm:py-20">
           <div className="grid gap-12 lg:grid-cols-12 items-start">
             <div className="lg:col-span-7">
               <p className="eyebrow">What we treat</p>
@@ -117,7 +117,7 @@ export function ServiceTemplateC({ service }: { service: Service }) {
       </section>
 
       {/* Process — numbered vertical list */}
-      <section className="mx-auto max-w-3xl px-6 py-20">
+      <section className="mx-auto max-w-3xl px-6 py-12 sm:py-20">
         <p className="eyebrow">How Roger&apos;s treats it</p>
         <h2 className="mt-2 font-display text-3xl sm:text-4xl text-brand-green">
           The process, plainly.
@@ -143,7 +143,7 @@ export function ServiceTemplateC({ service }: { service: Service }) {
 
       {/* Safety + Pricing band */}
       <section className="bg-brand-green text-brand-cream">
-        <div className="mx-auto max-w-5xl px-6 py-16 grid gap-10 md:grid-cols-2">
+        <div className="mx-auto max-w-5xl px-6 py-10 sm:py-16 grid gap-10 md:grid-cols-2">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-tan-light">
               Safety
@@ -175,7 +175,7 @@ export function ServiceTemplateC({ service }: { service: Service }) {
 
       {/* Cities — list style */}
       <section className="bg-white">
-        <div className="mx-auto max-w-3xl px-6 py-16">
+        <div className="mx-auto max-w-3xl px-6 py-10 sm:py-16">
           <p className="eyebrow text-center">Service areas</p>
           <h2 className="mt-2 text-center font-display text-3xl text-brand-green">
             {service.name} across the region.

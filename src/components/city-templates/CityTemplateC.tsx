@@ -40,11 +40,11 @@ export function CityTemplateC({ city }: { city: City }) {
             <circle cx="100" cy="100" r="78" />
           </svg>
         </div>
-        <div className="relative mx-auto max-w-3xl px-6 py-20 md:py-28 text-center">
+        <div className="relative mx-auto max-w-3xl px-6 py-12 sm:py-20 md:py-28 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-tan-light">
             {city.name}, {city.state} · {city.zips.join(" · ")}
           </p>
-          <h1 className="mt-3 font-display text-4xl sm:text-5xl md:text-6xl">
+          <h1 className="mt-3 font-display text-3xl sm:text-5xl md:text-6xl">
             Pest Control in {city.name}, {city.state}
           </h1>
           <p className="mt-6 text-lg md:text-xl leading-relaxed text-brand-cream/95 italic">
@@ -71,7 +71,7 @@ export function CityTemplateC({ city }: { city: City }) {
       <TrustStrip variant="light" />
 
       {/* About — article style with drop cap */}
-      <section className="mx-auto max-w-2xl px-6 py-20">
+      <section className="mx-auto max-w-2xl px-6 py-12 sm:py-20">
         <p className="eyebrow text-center">About {city.name}</p>
         <SectionDivider className="!my-6" />
         <article className="space-y-5 text-lg leading-[1.75] text-brand-charcoal/90">
@@ -88,7 +88,7 @@ export function CityTemplateC({ city }: { city: City }) {
 
       {/* ZIPs as huge visual */}
       <section className="bg-brand-cream-dark">
-        <div className="mx-auto max-w-5xl px-6 py-16 text-center">
+        <div className="mx-auto max-w-5xl px-6 py-10 sm:py-16 text-center">
           <p className="eyebrow">ZIP codes covered</p>
           <div className="mt-4 flex flex-wrap justify-center gap-3">
             {city.zips.map((z) => (
@@ -104,7 +104,7 @@ export function CityTemplateC({ city }: { city: City }) {
       </section>
 
       {/* Pest profile — 2-col panel */}
-      <section className="mx-auto max-w-6xl px-6 py-20">
+      <section className="mx-auto max-w-6xl px-6 py-12 sm:py-20">
         <div className="grid gap-10 lg:grid-cols-12 items-start">
           <div className="lg:col-span-5">
             <p className="eyebrow">Pest profile</p>
@@ -140,7 +140,7 @@ export function CityTemplateC({ city }: { city: City }) {
 
       {/* Services as vertical list with thumbnails */}
       <section className="bg-white">
-        <div className="mx-auto max-w-4xl px-6 py-20">
+        <div className="mx-auto max-w-4xl px-6 py-12 sm:py-20">
           <p className="eyebrow text-center">All services</p>
           <h2 className="mt-2 text-center font-display text-3xl text-brand-green">
             Full-service pest control in {city.name}.
@@ -181,7 +181,7 @@ export function CityTemplateC({ city }: { city: City }) {
 
       {/* Why us — 3-col cards */}
       <section className="bg-brand-cream-dark">
-        <div className="mx-auto max-w-5xl px-6 py-20">
+        <div className="mx-auto max-w-5xl px-6 py-12 sm:py-20">
           <p className="eyebrow text-center">Why {city.name} chooses Roger&apos;s</p>
           <h2 className="mt-2 text-center font-display text-3xl text-brand-green">
             Local. Family. Forty-plus years of {city.name} pest pressure.
@@ -204,7 +204,7 @@ export function CityTemplateC({ city }: { city: City }) {
 
       {/* Testimonials */}
       {cityTestimonials.length > 0 && (
-        <section className="mx-auto max-w-5xl px-6 py-20">
+        <section className="mx-auto max-w-5xl px-6 py-12 sm:py-20">
           <p className="eyebrow text-center">From {city.name} customers</p>
           <h2 className="mt-2 text-center font-display text-3xl text-brand-green">
             What people in {city.name} are saying.
@@ -222,7 +222,7 @@ export function CityTemplateC({ city }: { city: City }) {
 
       {/* Neighborhoods */}
       <section className="bg-white">
-        <div className="mx-auto max-w-3xl px-6 py-16">
+        <div className="mx-auto max-w-3xl px-6 py-10 sm:py-16">
           <p className="eyebrow text-center">Neighborhoods served</p>
           <h2 className="mt-2 text-center font-display text-2xl text-brand-green">
             We work all over {city.name}.

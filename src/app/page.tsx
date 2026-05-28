@@ -28,6 +28,7 @@ export default function HomePage() {
         subtitle={`Family-owned since ${business.foundedYear}. Free inspections. Honest pricing. Serving St. Louis County and Jefferson County since before your house had termites.`}
         ctaSecondary={{ label: "See Service Areas", href: "/service-areas" }}
         image={images.homeHero}
+        mobileDualPhone
       />
 
       <TrustStrip variant="light" />
@@ -61,7 +62,7 @@ export default function HomePage() {
 
       {/* Why Roger's — 3 feature columns */}
       <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-20">
+        <div className="mx-auto max-w-7xl px-6 py-12 sm:py-20">
           <div className="text-center">
             <p className="eyebrow">Why Roger's</p>
             <h2 className="mt-2 text-3xl sm:text-4xl text-brand-green">
@@ -86,7 +87,7 @@ export default function HomePage() {
       </section>
 
       {/* Top 5 services */}
-      <section className="mx-auto max-w-7xl px-6 py-20">
+      <section className="mx-auto max-w-7xl px-6 py-12 sm:py-20">
         <div className="flex items-end justify-between gap-4 flex-wrap">
           <div>
             <p className="eyebrow">Top Services</p>
@@ -112,7 +113,7 @@ export default function HomePage() {
 
       {/* Service area teaser */}
       <section className="bg-brand-cream-dark">
-        <div className="mx-auto max-w-7xl px-6 py-20">
+        <div className="mx-auto max-w-7xl px-6 py-12 sm:py-20">
           <div className="text-center">
             <p className="eyebrow">Service Areas</p>
             <h2 className="mt-2 text-3xl sm:text-4xl text-brand-green">
@@ -146,7 +147,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="mx-auto max-w-7xl px-6 py-20">
+      <section className="mx-auto max-w-7xl px-6 py-12 sm:py-20">
         <div className="text-center">
           <p className="eyebrow">What customers say</p>
           <h2 className="mt-2 text-3xl sm:text-4xl text-brand-green">
@@ -167,7 +168,7 @@ export default function HomePage() {
 
       {/* How it works */}
       <section className="bg-white">
-        <div className="mx-auto max-w-5xl px-6 py-20">
+        <div className="mx-auto max-w-5xl px-6 py-12 sm:py-20">
           <div className="text-center">
             <p className="eyebrow">How it works</p>
             <h2 className="mt-2 text-3xl sm:text-4xl text-brand-green">

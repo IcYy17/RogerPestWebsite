@@ -21,12 +21,12 @@ export function ServiceTemplateA({ service }: { service: Service }) {
     <>
       {/* Split Hero */}
       <section className="relative bg-brand-green text-white overflow-hidden">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-10 sm:py-16 lg:grid-cols-2 lg:py-24">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-tan-light">
               {service.shortName}
             </p>
-            <h1 className="mt-3 text-4xl sm:text-5xl md:text-6xl text-white">
+            <h1 className="mt-3 text-3xl sm:text-5xl md:text-6xl text-white">
               {service.name} in Eureka, MO
             </h1>
             <p className="mt-6 max-w-xl text-lg text-brand-cream/90 leading-relaxed">
@@ -58,7 +58,7 @@ export function ServiceTemplateA({ service }: { service: Service }) {
       <TrustStrip variant="light" />
 
       {/* Intro */}
-      <section className="mx-auto max-w-3xl px-6 py-20">
+      <section className="mx-auto max-w-3xl px-6 py-12 sm:py-20">
         <div className="space-y-5 text-base leading-relaxed text-brand-charcoal/90">
           {service.intro.map((p, i) => (
             <p key={i}>{p}</p>
@@ -68,7 +68,7 @@ export function ServiceTemplateA({ service }: { service: Service }) {
 
       {/* Process (cards) */}
       <section className="bg-white">
-        <div className="mx-auto max-w-5xl px-6 py-20">
+        <div className="mx-auto max-w-5xl px-6 py-12 sm:py-20">
           <p className="eyebrow text-center">How Roger&apos;s treats it</p>
           <h2 className="mt-2 text-center text-3xl sm:text-4xl text-brand-green">
             A simple, transparent process.
@@ -97,7 +97,7 @@ export function ServiceTemplateA({ service }: { service: Service }) {
       <SectionDivider />
 
       {/* What we treat | Signs (2-col) */}
-      <section className="mx-auto max-w-5xl px-6 py-16 grid gap-12 md:grid-cols-2">
+      <section className="mx-auto max-w-5xl px-6 py-10 sm:py-16 grid gap-12 md:grid-cols-2">
         <div>
           <p className="eyebrow">What we treat</p>
           <h2 className="mt-2 font-display text-3xl text-brand-green">
@@ -130,7 +130,7 @@ export function ServiceTemplateA({ service }: { service: Service }) {
 
       {/* Safety band */}
       <section className="bg-brand-cream-dark">
-        <div className="mx-auto max-w-3xl px-6 py-16 flex gap-4 items-start">
+        <div className="mx-auto max-w-3xl px-6 py-10 sm:py-16 flex gap-4 items-start">
           <ShieldIcon className="h-8 w-8 text-brand-green flex-shrink-0" />
           <div>
             <p className="eyebrow">Safety</p>
@@ -145,7 +145,7 @@ export function ServiceTemplateA({ service }: { service: Service }) {
       </section>
 
       {/* Pricing */}
-      <section className="mx-auto max-w-3xl px-6 py-16 text-center">
+      <section className="mx-auto max-w-3xl px-6 py-10 sm:py-16 text-center">
         <p className="eyebrow">Pricing</p>
         <h2 className="mt-2 font-display text-2xl text-brand-green">
           Free inspection. Written quote. No surprises.
@@ -163,7 +163,7 @@ export function ServiceTemplateA({ service }: { service: Service }) {
 
       {/* Cities */}
       <section className="bg-white">
-        <div className="mx-auto max-w-5xl px-6 py-16">
+        <div className="mx-auto max-w-5xl px-6 py-10 sm:py-16">
           <p className="eyebrow text-center">Where we work</p>
           <h2 className="mt-2 text-center text-3xl text-brand-green">
             {service.name} across our service area.

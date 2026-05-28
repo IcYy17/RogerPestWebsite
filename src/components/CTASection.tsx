@@ -24,12 +24,12 @@ export function CTASection({
           <path d="M0 80 L100 20 L200 80 Z" />
         </svg>
       </div>
-      <div className="relative mx-auto max-w-5xl px-6 py-20 text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl">{title}</h2>
-        <p className="mx-auto mt-4 max-w-2xl text-lg text-brand-cream/90">
+      <div className="relative mx-auto max-w-5xl px-5 sm:px-6 py-14 sm:py-20 text-center">
+        <h2 className="text-2xl sm:text-4xl md:text-5xl leading-tight">{title}</h2>
+        <p className="mx-auto mt-3 sm:mt-4 max-w-2xl text-base sm:text-lg text-brand-cream/90">
           {subtitle}
         </p>
-        <div className="mt-8 flex justify-center">
+        <div className="mt-6 sm:mt-8 flex justify-center">
           <PhoneButton variant="primary" />
         </div>
       </div>

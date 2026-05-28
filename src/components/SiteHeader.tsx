@@ -3,6 +3,7 @@ import Link from "next/link";
 import { business } from "@/content/business";
 import { MobileMenu } from "./MobileMenu";
 import { HeaderNav } from "./HeaderNav";
+import { DualPhoneCTA } from "./DualPhoneCTA";
 
 // Sitewide sticky header. Renders the brand mark + utility strip on the
 // server; delegates the desktop nav to <HeaderNav /> (a client component
@@ -54,43 +55,10 @@ export function SiteHeader() {
         <HeaderNav />
 
         {/* Dual phone CTAs — South + North, side by side, both click-to-call */}
-        <div className="hidden lg:flex items-center gap-2">
-          {business.phones.map((p) => (
-            <a
-              key={p.href}
-              href={p.href}
-              aria-label={`Call ${p.label} office at ${p.number}`}
-              className="group inline-flex items-center gap-2.5 rounded-full bg-brand-cta hover:bg-brand-cta-hover text-white shadow-md hover:shadow-lg px-4 py-2 transition-all"
-            >
-              <PhoneIcon />
-              <span className="flex flex-col items-start leading-none">
-                <span className="text-[9px] font-bold uppercase tracking-[0.14em] text-brand-cream/85">
-                  {p.label}
-                </span>
-                <span className="tnum font-semibold text-sm mt-0.5">
-                  {p.number}
-                </span>
-              </span>
-            </a>
-          ))}
-        </div>
+        <DualPhoneCTA className="hidden lg:flex" size="md" />
 
         <MobileMenu />
       </div>
     </header>
-  );
-}
-
-function PhoneIcon() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className="h-4 w-4 flex-shrink-0"
-      aria-hidden="true"
-    >
-      <path d="M19.5 14.25c-1.5 0-3-.25-4.4-.75-.5-.15-1.05-.05-1.4.35l-1.95 1.95a14.6 14.6 0 0 1-6.55-6.55l1.95-1.95c.4-.35.5-.9.35-1.4-.5-1.4-.75-2.9-.75-4.4 0-.7-.55-1.25-1.25-1.25H3c-.7 0-1.5.3-1.5 1.25 0 9.95 8.05 18 18 18 .9 0 1.25-.75 1.25-1.5v-2.5c0-.7-.55-1.25-1.25-1.25z" />
-    </svg>
   );
 }
