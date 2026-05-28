@@ -6,10 +6,28 @@ export const business = {
   name: "Roger's Termite & Pest Control",
   legalName: "Roger's Termite and Pest Control Co., LLC",
   shortName: "Roger's",
-  tagline: "Family-owned pest control. Eureka, MO since 1968.",
+  tagline: "Family-owned pest control. Eureka, MO since 1970.",
 
+  // Primary phone — used everywhere EXCEPT the header utility strip
+  // (which surfaces both South + North numbers). The 573 line is the
+  // canonical NAP number for Google Business Profile, Yelp, BBB, schema.
   phone: "(573) 883-0863",
   phoneHref: "tel:+15738830863",
+
+  // Header dual-line numbers — South office (Eureka) + North coverage line
+  phones: [
+    {
+      label: "South",
+      number: "(573) 883-0863",
+      href: "tel:+15738830863",
+    },
+    {
+      label: "North",
+      number: "(314) 896-5568",
+      href: "tel:+13148965568",
+    },
+  ],
+
   email: "info@termiterogers.com", // placeholder — confirm with Roger
 
   address: {
@@ -37,12 +55,12 @@ export const business = {
   ],
   hoursDisplay: "Mon–Fri 8:30 AM – 5:30 PM",
 
-  foundedYear: 1968,
-  yearsInBusiness: new Date().getFullYear() - 1968,
+  foundedYear: 1970,
+  yearsInBusiness: new Date().getFullYear() - 1970,
 
   // Differentiators surfaced in hero, trust strips, footers
   differentiators: [
-    "Family-Owned Since 1968",
+    "Family-Owned Since 1970",
     "Free Inspections & Honest Quotes",
     "Licensed & Insured in Missouri",
     "Local Family Business — We Answer Our Own Phone",

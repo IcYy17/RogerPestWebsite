@@ -2,7 +2,7 @@ import { ShieldIcon } from "./ShieldBadge";
 
 const items = [
   "★★★★★ Locally Trusted",
-  "Family-Owned Since 1968",
+  "Family-Owned Since 1970",
   "Licensed & Insured in Missouri",
 ];
 

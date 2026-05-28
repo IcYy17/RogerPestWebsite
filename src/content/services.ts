@@ -39,10 +39,10 @@ export const services: Service[] = [
     tagline:
       "Termites cause more home damage in Missouri than fire and storms combined.",
     metaDescription:
-      "Termite control & treatment in Eureka, MO and St. Louis County. Free inspections, honest quotes, family-owned since 1968. Call (573) 883-0863.",
+      "Termite control & treatment in Eureka, MO and St. Louis County. Free inspections, honest quotes, family-owned since 1970. Call (573) 883-0863.",
     intro: [
       "Missouri sits squarely in the heaviest termite pressure zone in the United States. Eastern subterranean termites — the species responsible for nearly every infestation around Eureka, Wildwood, Pacific, Ballwin, and Chesterfield — work silently for years before homeowners notice a problem. By the time you see mud tubes on a foundation wall or a hollow-sounding floor joist, the colony has already done its work.",
-      "Roger's has been treating termites in St. Louis County since 1968. Three generations have walked the same crawl spaces and basements, and we know every place a colony is likely to hide in a Missouri home — the sill plate, the floor joists above the foundation, behind finished basement walls, around the bath trap, inside porch piers. A real termite inspection means crawling, probing, and pulling back insulation. It is not a 10-minute walk-around.",
+      "Roger's has been treating termites in St. Louis County since 1970. Three generations have walked the same crawl spaces and basements, and we know every place a colony is likely to hide in a Missouri home — the sill plate, the floor joists above the foundation, behind finished basement walls, around the bath trap, inside porch piers. A real termite inspection means crawling, probing, and pulling back insulation. It is not a 10-minute walk-around.",
     ],
     whatWeTreat: [
       "Eastern subterranean termites (the species responsible for the vast majority of MO infestations)",
@@ -106,10 +106,10 @@ export const services: Service[] = [
     tagline:
       "Ants in the kitchen. Spiders in the basement. We handle the everyday stuff.",
     metaDescription:
-      "General pest control in Eureka, MO — ants, roaches, spiders, silverfish, and more. Family-owned since 1968. Free inspection. Call (573) 883-0863.",
+      "General pest control in Eureka, MO — ants, roaches, spiders, silverfish, and more. Family-owned since 1970. Free inspection. Call (573) 883-0863.",
     intro: [
       "Most pest control calls in St. Louis County aren't dramatic emergencies — they're the steady, low-grade nuisance of ants on the counter every spring, spiders in the basement every fall, the occasional silverfish under the kitchen sink. Our general pest control service is built to handle all of it on one quarterly visit.",
-      "We're not a national chain that hands you a binder and a contract. Roger's has been doing this since 1968, which means we know which ants you actually have (in MO it's usually odorous house ants or pavement ants — not what most homeowners assume), which spiders are worth worrying about (brown recluse and black widow get real attention; cellar spiders don't), and which treatments actually work for older Missouri housing stock.",
+      "We're not a national chain that hands you a binder and a contract. Roger's has been doing this since 1970, which means we know which ants you actually have (in MO it's usually odorous house ants or pavement ants — not what most homeowners assume), which spiders are worth worrying about (brown recluse and black widow get real attention; cellar spiders don't), and which treatments actually work for older Missouri housing stock.",
     ],
     whatWeTreat: [
       "Ants — odorous house ants, pavement ants, carpenter ants, acrobat ants",
@@ -174,7 +174,7 @@ export const services: Service[] = [
     tagline:
       "Mice and rats find their way in every fall. We seal them out and clear them out.",
     metaDescription:
-      "Rodent control and removal in Eureka, MO. Mouse and rat exclusion, trapping, and prevention. Family-owned since 1968. Call (573) 883-0863.",
+      "Rodent control and removal in Eureka, MO. Mouse and rat exclusion, trapping, and prevention. Family-owned since 1970. Call (573) 883-0863.",
     intro: [
       "Mice and Norway rats are a fact of life around St. Louis County, especially as temperatures drop in October and November. A house mouse can squeeze through a hole the diameter of a pencil; a young rat can squeeze through a half-inch gap. Older Missouri housing stock — and even newer construction with sloppy utility penetrations — has plenty of both.",
       "Trapping alone doesn't fix a rodent problem. The trick is finding how they got in, sealing it, and then clearing whatever's already inside. That's the work. We've been doing it in Eureka, Ballwin, Wildwood, and the surrounding cities for over five decades.",
@@ -300,7 +300,7 @@ export const services: Service[] = [
     image: "serviceBedBug",
     tagline: "Discreet, thorough, and effective — usually one or two visits.",
     metaDescription:
-      "Bed bug treatment in Eureka, MO. Discreet, thorough inspections and treatments. Family-owned since 1968. Call (573) 883-0863 for a free quote.",
+      "Bed bug treatment in Eureka, MO. Discreet, thorough inspections and treatments. Family-owned since 1970. Call (573) 883-0863 for a free quote.",
     intro: [
       "Bed bugs aren't a hygiene problem and they're not a moral failing — they're a hitchhiker. They come home from hotels, secondhand furniture, even rideshares. Once they're in, they're stubborn. Over-the-counter sprays mostly don't work, and the bugs are smart enough to scatter when a homeowner starts treating, which can turn a bedroom problem into a whole-house problem.",
       "We do this discreetly. Unmarked vehicle if you ask. We tell you exactly how to prep so we only have to come twice. We don't oversell — most legitimate bed bug treatments take one or two professional visits, not the eight or ten some chains will quote you.",
@@ -431,7 +431,7 @@ export const services: Service[] = [
     tagline:
       "Same-day removal for nests on your house. We protect honeybees when we can.",
     metaDescription:
-      "Wasp, hornet, and bee removal in Eureka, MO. Same-day service for nests near your home. Family-owned since 1968. Call (573) 883-0863.",
+      "Wasp, hornet, and bee removal in Eureka, MO. Same-day service for nests near your home. Family-owned since 1970. Call (573) 883-0863.",
     intro: [
       "Paper wasps, yellow jackets, bald-faced hornets — they all get aggressive in late summer. A nest tucked under an eave or in a soffit is a real problem, especially with kids and pets around. Most calls we get are same-day urgent: customers spot a nest, want it gone before someone gets stung.",
       "We handle wasps and hornets directly and quickly. Honeybees are different — they're pollinators we don't want to kill if we can avoid it. When a honeybee swarm or established colony shows up, we work with local beekeepers to relocate when feasible.",
@@ -496,7 +496,7 @@ export const services: Service[] = [
     tagline:
       "Restaurants, offices, warehouses, retail. Discreet visits and audit-ready records.",
     metaDescription:
-      "Commercial pest control in Eureka, MO and St. Louis County. Restaurants, offices, retail, warehouses. Family-owned since 1968. Call (573) 883-0863.",
+      "Commercial pest control in Eureka, MO and St. Louis County. Restaurants, offices, retail, warehouses. Family-owned since 1970. Call (573) 883-0863.",
     intro: [
       "Commercial pest control is a different job from residential. Restaurants need health-inspection-ready service records. Warehouses need exterior rodent stations on documented schedules. Offices need treatments scheduled outside business hours. We've been doing this work for local businesses since the 1970s.",
       "Every commercial account gets a service log book on site, documented monthly visits, and a single point of contact who knows your property. No call centers, no rotating techs you've never met. The same Roger's tech who handles your account this year will handle it next year.",

@@ -38,11 +38,11 @@ export const cities: City[] = [
     state: "MO",
     image: "cityEureka",
     metaDescription:
-      "Pest control in Eureka, MO. Family-owned since 1968 — termite, ant, rodent, mosquito, and bed bug service. Free inspections. Call (573) 883-0863.",
+      "Pest control in Eureka, MO. Family-owned since 1970 — termite, ant, rodent, mosquito, and bed bug service. Free inspections. Call (573) 883-0863.",
     heroSubhead:
-      "We're based here. Family-owned in Eureka, MO since 1968 — and we'll be at your door faster than anyone from out of town.",
+      "We're based here. Family-owned in Eureka, MO since 1970 — and we'll be at your door faster than anyone from out of town.",
     about: [
-      "Eureka is home. Roger's has run out of Eureka since 1968 — the office is on Sunflower Drive, ten minutes from the Six Flags exit on I-44, and we know this town the way only a multi-generation local business can. Every street between Allenton Road and the Pacific city limit, every subdivision off Highway 109, every older home with a stone foundation on Central Avenue.",
+      "Eureka is home. Roger's has run out of Eureka since 1970 — the office is on Sunflower Drive, ten minutes from the Six Flags exit on I-44, and we know this town the way only a multi-generation local business can. Every street between Allenton Road and the Pacific city limit, every subdivision off Highway 109, every older home with a stone foundation on Central Avenue.",
       "Eureka's housing stock is a mix that creates a specific pest profile. Older homes in town — many built in the 1940s through 1970s — have stone or block basements and crawl spaces that are termite, rodent, and spider havens. Newer construction in subdivisions like Legends, Vintage Oaks, and the Wildhorse Creek corridor sits on slabs or poured walls but is surrounded by mature trees and woodland edges that bring carpenter ants, mosquitoes, and seasonal invaders. Meramec River bottom properties get heavy mosquito pressure every summer.",
       "Because we're physically in Eureka, we get to your door fast. Most calls inside the 63025 zip get same-day or next-day service. We're not driving in from O'Fallon or Wentzville — we're driving in from down the street.",
     ],
@@ -202,7 +202,7 @@ export const cities: City[] = [
     state: "MO",
     image: "cityBallwin",
     metaDescription:
-      "Pest control in Ballwin, MO. Termite, ant, roach, and rodent treatment for older Ballwin homes. Family-owned since 1968. Call (573) 883-0863.",
+      "Pest control in Ballwin, MO. Termite, ant, roach, and rodent treatment for older Ballwin homes. Family-owned since 1970. Call (573) 883-0863.",
     heroSubhead:
       "Ballwin's mature 1960s–80s housing stock means termites, ants, and mice. We've been treating it since it was built.",
     about: [

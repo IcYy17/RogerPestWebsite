@@ -117,12 +117,23 @@ export function MobileMenu() {
             </MobileLink>
           </nav>
 
-          <a
-            href={business.phoneHref}
-            className="mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-brand-cta hover:bg-brand-cta-hover text-white font-semibold px-6 py-4 text-base"
-          >
-            Call {business.phone}
-          </a>
+          <div className="mt-8 grid grid-cols-2 gap-2">
+            {business.phones.map((p) => (
+              <a
+                key={p.href}
+                href={p.href}
+                aria-label={`Call ${p.label} office at ${p.number}`}
+                className="flex flex-col items-center justify-center rounded-full bg-brand-cta hover:bg-brand-cta-hover text-white px-4 py-3"
+              >
+                <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-brand-cream/85 leading-none">
+                  {p.label}
+                </span>
+                <span className="tnum font-semibold text-sm mt-1">
+                  {p.number}
+                </span>
+              </a>
+            ))}
+          </div>
         </div>
       )}
     </div>

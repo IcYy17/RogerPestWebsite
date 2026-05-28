@@ -23,7 +23,7 @@ export const images = {
   },
   aboutFamily: {
     src: "/images/about-family-business.jpg",
-    alt: "Family business owners working together — Roger's has been a family-run pest control company in Eureka, MO since 1968.",
+    alt: "Family business owners working together — Roger's has been a family-run pest control company in Eureka, MO since 1970.",
     width: W,
     height: 1067,
   },
@@ -47,7 +47,7 @@ export const images = {
   },
   rogerPortrait: {
     src: "/images/roger-portrait.jpg",
-    alt: "Roger — owner of Roger's Termite & Pest Control, the family-run pest control company serving Eureka, MO since 1968.",
+    alt: "Roger — owner of Roger's Termite & Pest Control, the family-run pest control company serving Eureka, MO since 1970.",
     width: 1536,
     height: 1536,
   },
@@ -105,7 +105,7 @@ export const images = {
   // Cities
   cityEureka: {
     src: "/images/city-eureka-mo-red-brick-home.jpg",
-    alt: "A red-brick Eureka, MO home — typical of the older housing stock Roger's has been treating in 63025 since 1968.",
+    alt: "A red-brick Eureka, MO home — typical of the older housing stock Roger's has been treating in 63025 since 1970.",
     width: W,
     height: 1067,
   },

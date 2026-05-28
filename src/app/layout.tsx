@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | Roger's Termite & Pest Control",
   },
   description:
-    "Family-owned pest control in Eureka, MO since 1968. Termite, ant, rodent, mosquito, and bed bug treatment in St. Louis County. Free inspections. Call (573) 883-0863.",
+    "Family-owned pest control in Eureka, MO since 1970. Termite, ant, rodent, mosquito, and bed bug treatment in St. Louis County. Free inspections. Call (573) 883-0863.",
   keywords: [
     "pest control Eureka MO",
     "termite control Missouri",
@@ -43,13 +43,13 @@ export const metadata: Metadata = {
     siteName: business.name,
     title: "Pest Control Eureka, MO | Roger's Termite & Pest Control",
     description:
-      "Family-owned pest control in Eureka, MO since 1968. Termite, ant, rodent, mosquito, and bed bug treatment.",
+      "Family-owned pest control in Eureka, MO since 1970. Termite, ant, rodent, mosquito, and bed bug treatment.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Pest Control Eureka, MO | Roger's Termite & Pest Control",
     description:
-      "Family-owned pest control in Eureka, MO since 1968. Free inspections. Honest quotes.",
+      "Family-owned pest control in Eureka, MO since 1970. Free inspections. Honest quotes.",
   },
   alternates: {
     canonical: "/",
