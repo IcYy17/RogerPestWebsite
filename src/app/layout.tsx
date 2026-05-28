@@ -58,6 +58,12 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    // Google Search Console — verified via meta tag method.
+    // (Belt-and-suspenders: also recommend adding a DNS TXT record with
+    // the same value at the apex for durability across hosting changes.)
+    google: "zI2g3aDg2dI4ufmf7CtnAkdRhnhQHp0t07IgeIYvS_c",
+  },
 };
 
 export default function RootLayout({
