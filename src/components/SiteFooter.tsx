@@ -161,6 +161,18 @@ export function SiteFooter() {
             Family-Owned in Eureka, MO since {business.foundedYear}.
           </div>
         </div>
+
+        <div className="mt-6 border-t border-brand-green-light/30 pt-6 text-center text-xs text-brand-cream/70">
+          Reviews powered by{" "}
+          <a
+            href="https://trydrumroll.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-brand-tan-light hover:text-brand-cream"
+          >
+            Drumroll
+          </a>
+        </div>
       </div>
     </footer>
   );
