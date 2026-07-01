@@ -476,7 +476,7 @@ These aren't blockers for the v1 build — placeholders ship — but Roger shoul
 6. Real Google reviews to replace the 3 sample testimonials.
 7. Photos: Roger, the truck, the team, any before/after work.
 8. ~~Logo. If none, we design a simple wordmark.~~ **✓ Received.**
-9. Domain name = termiterogers.com
+9. Domain name = rogerstermiteandpest.com (primary; termiterogers.com redirects to it)
 10. Any current promos / coupons / new-customer offers?
 11. Does he want commercial work or strictly residential? (Currently we include `/services/commercial-pest`.)
 12. Service guarantee — what does he stand behind, in his own words?

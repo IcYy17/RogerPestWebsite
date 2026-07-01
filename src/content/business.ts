@@ -28,7 +28,7 @@ export const business = {
     },
   ],
 
-  email: "info@termiterogers.com", // placeholder — confirm with Roger
+  email: "info@rogerstermiteandpest.com", // placeholder — confirm with Roger
 
   address: {
     street: "5261 Sunflower Dr",
@@ -66,8 +66,11 @@ export const business = {
     "Local Family Business — We Answer Our Own Phone",
   ],
 
-  domain: "termiterogers.com",
-  siteUrl: "https://www.termiterogers.com",
+  // Canonical domain. rogerstermiteandpest.com is the primary; the apex
+  // (non-www) is canonical because www.rogerstermiteandpest.com redirects
+  // to it. termiterogers.com is a secondary domain that 301-redirects here.
+  domain: "rogerstermiteandpest.com",
+  siteUrl: "https://rogerstermiteandpest.com",
 
   // External listings — used in footer "Leave a Review" + JSON-LD sameAs
   sameAs: {

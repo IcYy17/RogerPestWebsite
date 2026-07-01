@@ -5,7 +5,7 @@ Local-SEO–first marketing site for Roger's Termite & Pest Control, Eureka, MO.
 - **13 indexable pages**: home, services index + 8 service detail pages, service-areas index + 5 city pages, about, contact.
 - **Stack**: Next.js 16 (App Router) · React 19 · Tailwind CSS v4 · TypeScript.
 - **Hosting target**: Vercel.
-- **Domain (intended)**: termiterogers.com.
+- **Domain (primary)**: rogerstermiteandpest.com (apex is canonical; `www` redirects to it). `termiterogers.com` is a secondary domain that 301-redirects to the primary.
 
 See [plan.md](./plan.md) for the full build spec, SEO checklist, and design rationale.
 
@@ -79,9 +79,9 @@ Same pattern: append to `services` in [`src/content/services.ts`](src/content/se
 The site builds and deploys without a domain — Vercel will give you a free `*.vercel.app` preview URL on first push.
 
 **At launch:**
-1. Buy `termiterogers.com` at a registrar (Namecheap, Cloudflare, etc.).
-2. In Vercel: project settings → Domains → add `termiterogers.com` and `www.termiterogers.com`. Vercel walks you through DNS.
-3. If the final domain changes from `termiterogers.com`, update one line in [`src/content/business.ts`](src/content/business.ts) (`siteUrl`) and redeploy. All sitemap URLs, canonicals, and JSON-LD `url` fields update automatically.
+1. Primary domain is `rogerstermiteandpest.com` (already registered). `termiterogers.com` is kept as a secondary that 301-redirects to it.
+2. In Vercel: project settings → Domains → `rogerstermiteandpest.com` is the primary; `www.rogerstermiteandpest.com` redirects to the apex; `termiterogers.com` + `www.termiterogers.com` redirect to the primary. Vercel walks you through DNS.
+3. If the canonical domain ever changes, update one line in [`src/content/business.ts`](src/content/business.ts) (`siteUrl`) and the URLs in [`public/llms.txt`](public/llms.txt), then redeploy. All sitemap URLs, canonicals, and JSON-LD `url` fields update automatically from `siteUrl`.
 4. Submit `/sitemap.xml` in [Google Search Console](https://search.google.com/search-console).
 5. Claim & verify the [Google Business Profile](https://www.google.com/business/), set its website to the live domain. Per Whitespark, this is the single highest-leverage SEO step.
 
@@ -102,7 +102,7 @@ These items in [plan.md §13](./plan.md) need real data before going live:
 - [ ] Current promos / coupons / new-customer offers — add to home page if desired.
 - [ ] Confirm commercial vs strictly residential — currently includes `/services/commercial-pest`.
 - [ ] Service guarantee wording — currently placeholder in About credentials.
-- [ ] Real `info@termiterogers.com` mailbox set up (or update the contact page email).
+- [ ] Real `info@rogerstermiteandpest.com` mailbox set up (or update the contact page email).
 
 ---
 
