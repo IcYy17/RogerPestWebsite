@@ -155,6 +155,14 @@ export function MobileMenu() {
             </MobileSection>
 
             <MobileLink
+              href="/blog"
+              onClick={() => setOpen(false)}
+              active={isActive("/blog")}
+            >
+              Blog
+            </MobileLink>
+
+            <MobileLink
               href="/faq"
               onClick={() => setOpen(false)}
               active={isActive("/faq")}

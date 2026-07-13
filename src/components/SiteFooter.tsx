@@ -110,6 +110,11 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
+                <Link href="/blog" className="hover:text-brand-tan-light">
+                  Blog
+                </Link>
+              </li>
+              <li>
                 <Link href="/faq" className="hover:text-brand-tan-light">
                   FAQ
                 </Link>

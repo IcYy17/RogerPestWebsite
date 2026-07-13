@@ -73,6 +73,10 @@ export function HeaderNav() {
         </DropdownLink>
       </NavDropdown>
 
+      <NavLink href="/blog" active={isActive(pathname, "/blog")}>
+        Blog
+      </NavLink>
+
       <NavLink href="/faq" active={isActive(pathname, "/faq")}>
         FAQ
       </NavLink>
