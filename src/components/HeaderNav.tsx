@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { headerServices } from "@/content/services";
@@ -129,8 +130,20 @@ function NavDropdown({
   active: boolean;
   children: React.ReactNode;
 }) {
+  // Clicking latches the hover panel shut (":hover" stays true after a click, so the
+  // panel would sit open over the page you just navigated to). Mouse-leave releases it.
+  const [dismissed, setDismissed] = useState(false);
+  const close = () => {
+    setDismissed(true);
+    (document.activeElement as HTMLElement | null)?.blur();
+  };
+
   return (
-    <div className="group relative">
+    <div
+      className="group relative"
+      onMouseLeave={() => setDismissed(false)}
+      onClick={close}
+    >
       <Link
         href={indexHref}
         aria-current={active ? "page" : undefined}
@@ -149,7 +162,11 @@ function NavDropdown({
           />
         )}
       </Link>
-      <div className="invisible absolute left-0 top-full pt-1 opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity">
+      <div
+        className={`invisible absolute left-0 top-full pt-1 opacity-0 transition-opacity ${
+          dismissed ? "" : "group-hover:visible group-hover:opacity-100"
+        }`}
+      >
         <div className="min-w-[220px] rounded-md border border-brand-tan/30 bg-white shadow-lg p-2">
           {children}
         </div>
