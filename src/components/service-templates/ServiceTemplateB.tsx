@@ -9,6 +9,7 @@ import { images } from "@/content/images";
 import { PhoneButton } from "@/components/PhoneButton";
 import { TrustStrip } from "@/components/TrustStrip";
 import { FAQ } from "@/components/FAQ";
+import { RecentWork } from "@/components/RecentWork";
 import { CTASection } from "@/components/CTASection";
 import { SectionDivider } from "@/components/SectionDivider";
 import { ShieldIcon } from "@/components/ShieldBadge";
@@ -196,6 +197,8 @@ export function ServiceTemplateB({ service }: { service: Service }) {
           </div>
         </div>
       </section>
+
+      <RecentWork service={service.name} />
 
       <CTASection />
     </>

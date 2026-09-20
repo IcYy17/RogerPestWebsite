@@ -3,6 +3,7 @@ import { business } from "@/content/business";
 import { services } from "@/content/services";
 import { cities } from "@/content/cities";
 import { getPublishedPosts } from "@/lib/aeo-blog";
+import { getRecentWork } from "@/lib/recent-work";
 
 const BASE = business.siteUrl;
 
@@ -47,5 +48,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...servicePages, ...cityPages, ...blogPages];
+  // Recent Work (gigs) is DB-driven too; the index only lists once something is posted.
+  const work = await getRecentWork();
+  const workPages: MetadataRoute.Sitemap = work.length
+    ? [
+        { url: `${BASE}/recent-work`, lastModified, changeFrequency: "weekly", priority: 0.7 },
+        ...work.map((item) => ({
+          url: `${BASE}/recent-work/${item.slug}`,
+          lastModified: new Date(item.postedAt),
+          changeFrequency: "monthly" as const,
+          priority: 0.6,
+        })),
+      ]
+    : [];
+
+  return [...staticPages, ...servicePages, ...cityPages, ...blogPages, ...workPages];
 }

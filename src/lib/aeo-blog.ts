@@ -60,7 +60,8 @@ function normDomain(d: string | null | undefined): string {
 // Resolve this site's company_id once and cache it for the server instance.
 let companyIdPromise: Promise<string | null> | null = null;
 
-function resolveCompanyId(): Promise<string | null> {
+// Exported so recent-work.ts scopes gigs to the same company.
+export function resolveCompanyId(): Promise<string | null> {
   if (companyIdPromise) return companyIdPromise;
   companyIdPromise = (async () => {
     // Explicit override wins.

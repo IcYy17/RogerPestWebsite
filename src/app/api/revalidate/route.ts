@@ -24,6 +24,11 @@ export async function POST(req: Request) {
   }
 
   const path = body.path || "/blog";
+  if (path.startsWith("/recent-work")) {
+    // A gig also changes service-page rollups and the footer link: refresh everything.
+    revalidatePath("/", "layout");
+    return Response.json({ revalidated: true, path, scope: "site" });
+  }
   revalidatePath(path);
   // Always refresh the index too, so a new post shows up in the listing.
   if (path !== "/blog") revalidatePath("/blog");

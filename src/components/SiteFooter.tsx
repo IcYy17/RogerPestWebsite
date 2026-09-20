@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getRecentWork } from "@/lib/recent-work";
 import Image from "next/image";
 import { business } from "@/content/business";
 import { services } from "@/content/services";
@@ -9,7 +10,9 @@ import { NAPBlock } from "./NAPBlock";
 // Quick links. Repeats all internal links — Whitespark recommends footer
 // internal links for crawlability.
 
-export function SiteFooter() {
+export async function SiteFooter() {
+  // Only once the crew has posted a gig; keeps the footer unchanged for clients without Gigs.
+  const hasRecentWork = (await getRecentWork()).length > 0;
   return (
     <footer className="bg-brand-green text-brand-cream">
       <div className="mx-auto max-w-7xl px-6 py-16">
@@ -114,6 +117,13 @@ export function SiteFooter() {
                   Blog
                 </Link>
               </li>
+              {hasRecentWork && (
+                <li>
+                  <Link href="/recent-work" className="hover:text-brand-tan-light">
+                    Recent Work
+                  </Link>
+                </li>
+              )}
               <li>
                 <Link href="/faq" className="hover:text-brand-tan-light">
                   FAQ
